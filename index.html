@@ -1,0 +1,90 @@
+<!--
+					   _ooOoo_
+					  o8888888o
+					  88" . "88
+					  (| -_- |)
+					  O\  =  /O
+				   ____/---\____
+				 .'  \\|     |//  '.
+				/  \\|||  :  |||//  \
+			   /  _||||| -:- |||||-  \
+			   |   | \\\  -  /// |   |
+			   | _|  ''---/''  |   |
+			   \  .-\__  `-`  ___/-. /
+			 ___`. .'  /--.--\  `. . __
+		  ."" '<  `.___\_<|>_/___.'  >'"".
+		 | | :  `- \.;`\ _ /';.\ - ` : | |
+		 \  \ `-.   \_ __\ /__ _/   .-\ /  /
+	======`-.____`-.___\_____/___.-`____.-'======
+					   `=---='
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			 佛祖保佑       永无BUG
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<link rel="shortcut icon" href="./favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择页面</title>
+    <style>
+        body {
+            background-image: url('./background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        h1 {
+            color: white;
+            font-size: 36px; /* 更大一点 */
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        li {
+            margin-bottom: 20px; /* 增加间距 */
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold; /* 加粗链接文本 */
+            transition: color 0.3s ease; /* 添加过渡效果 */
+        }
+        a:hover {
+            color: #f8d800; /* 鼠标悬停时的颜色 */
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>选择版本：</h1>
+    <ul>
+        <li><a href="./time/">电子钟表</a></li>
+        <li><a href="./exam/">考试看板</a></li>
+    </ul>
+
+    <!-- 添加GitHub图标跳转项目地址 -->
+    <a href="https://github.com/ExamAware/ExamSchedule" target="_blank">
+        <img src="./github-icon.png" alt="GitHub" style="position: absolute; top: 10px; right: 10px; width: 30px; height: 30px;" title="在GitHub上查看源代码">
+    </a>
+</body>
+</html>
